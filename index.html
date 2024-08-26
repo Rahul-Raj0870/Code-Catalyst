@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+<body class="font-[Poppins]" >
+    <header id="head" class=" font-[Poppins] bg-[#6f6ad8]  md:h-[30vh] md:rounded-br-4xl">
+        <nav class=" bg-[#6f6ad8] flex justify-between items-center w-[92%]  mx-0 h-16 w-full px-2 md:fixed top-0 z-10">
+            <div class="image-container w-32">
+                 <img src="./images/logo.png" alt="" class=" object-contain md:ms-[1rem]">
+            </div>
+            <div
+                class="nav-links duration-500 md:static absolute bg-[#6f6ad8] md:min-h-fit left-0 top-[-100%] md:w-auto  w-full flex items-center px-5 rounded-b-3xl z-10">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 text-white ">
+                    <li>
+                        <a class="hover:text-gray-300" href="#Home">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-300" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-300" href="#Courses">Courses</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-300" href="#About">About</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-300" href="#Contact">Contact</a>
+                    </li>
+                    <li>
+                      <a class="hover:text-gray-300" href="#Contact">Register Now</a>
+                  </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-0">
+                     <input type="search" placeholder="     Type Something" class="rounded-full border border-2 ps-[2rem] md:me-[2rem]">
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden pl-5"></ion-icon>
+            </div>
+    </header>
+    
+    <section id="Home">
+        
+        <div class="background bg-[#6f6ad8] md:h-[80vh] ">
+            
+            <div class=" md:w-[120vh] h-[65vh] ms-[30%] mt-[-5%]" id="homesec">
+                
+                <div id="homeimg" ><img src="./images/banner-item-01.jpg" alt="" class=" bgimg  w-full rounded-3xl sm:min-w-[400px]"  id="imagebg"></div>
+                <div class="absolute text-white top-[5%] md:top-40 z-[0]" id="content">
+                    
+                    <button class="md:px-2 py-2  mt-[5rem] ms-[15%] mb-[1.5rem] bg-[#6f6ad8] rounded-3xl text-[1.2rem]"> our courses</button>
+                    <h1 class=" md:text-[2.5rem] ms-[15%] mb-[1rem]">With Schola Teachers,<br>Everything is Easier</h1>
+                    <p class=" md:ms-[15%] mb-[2rem] text-justify me-[15%] block"> Codecatalyst is an online learning platform that offers a comprehensive range of web development courses, tutorials, and resources. Our mission is to empower individuals with the skills and knowledge needed to succeed in the ever-evolving world of web development.</p>
+                    <a href="#Contact" class="  bg-sky-600 rounded-3xl md: px-2 py-2 ms-[15%] hover:border hover:bg-transparent ">Register Now</a>
+                    <img class=" md:absolute left-[-58%] top-[10%] w-[100vh] opacity-[0.5]" src="./images/Purple_Spiral_Modern_Abstract_Professional_Technology_Logo__1_-removebg-preview.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="flex flex-col md:flex-row mx-[2rem] my-[8rem]">
+        <div id="serv1" class="service bg-gray-200 rounded-3xl md:h-[30vh] w-[55vh] px-[2rem] ms-[2rem] border border-2">
+            <img src="./images/service-01.png" alt="" class=" md:bg-[#6f6ad8] p-[1rem] rounded-3xl mt-[-5rem] ms-[80%]">
+            <h2 class="md:text-[2rem] mt-[1rem]">Online Degree</h2>
+            <p class="text-justify md:pe-[1rem] text-[1.2rem] mt-[1rem] ">Unlock your web development skills with our expert-led online courses.</p>
+            <button class=" text-[#6f6ad8] hover:text-white hover:bg-[#6f6ad8] md:px-[0.8rem] mt-[1rem] bg-white rounded-3xl">Read More</button>
+        </div>
+        <div id="serv2" class="service bg-gray-200 rounded-3xl md:h-[30vh] w-[60vh] px-[2rem] mx-[2rem] border border-2">
+            <img src="./images/service-02.png" alt="" class=" md:bg-[#6f6ad8] p-[1rem] rounded-3xl mt-[-5rem] ms-[80%]">
+            <h2 class="md:text-[2rem] mt-[1rem]">Short Courses</h2>
+            <p class="text-justify md:pe-[1rem] text-[1.2rem] mt-[1rem] ">Accelerate your web development skills with our effective short courses.</p>
+            <button class=" text-[#6f6ad8] hover:text-white hover:bg-[#6f6ad8] md:px-[0.8rem] mt-[1rem] bg-white rounded-3xl">Read More</button>
+        </div>
+        <div id="serv3" class="service bg-gray-200 rounded-3xl md:h-[30vh] w-[60vh] px-[2rem] border border-2">
+            <img src="./images/service-03.png" alt="" class=" md:bg-[#6f6ad8] p-[1rem] rounded-3xl mt-[-5rem] ms-[80%]">
+            <h2 class="md:text-[2rem] mt-[1rem]">Web Expert</h2>
+            <p class="text-justify md:pe-[1rem] text-[1.2rem] mt-[1rem] ">Get expert training in web development with our short courses.</p>
+            <button class=" text-[#6f6ad8] hover:text-white hover:bg-[#6f6ad8] md:px-[0.8rem] mt-[1rem] bg-white rounded-3xl">Read More</button>
+        </div>
+    </section>
+    <section id="About" class="flex flex-col  md:flex-row mx-[4rem]">
+        <div id="aboutimg" class="bg-sky-600 rounded-3xl md:w-[90vh] h-[60vh]">
+            <img class="object-cover rounded-3xl md:w-[90vh] h-[60vh]" src="./images/course-04.jpg" alt="">
+        </div>
+        <div id="aboutcont" class="bg-gray-200  md:w-[90vh] h-[52vh] mt-[2rem] px-[4rem]">
+            <h4 class="text-[#6f6ad8] md:text-[1.5rem] my-[1rem]">About</h4>
+            <h1 class=" font-bold md:text-[2rem]">What Make Us The Best <br> Academy Online?</h1>
+            <p class="md:text-[1.2rem] text-justify my-[1rem]">Welcome to CodeCatalyst, your premier online destination for learning web development. <span>We're a team of passionate web developers, educators, and innovators dedicated to helping individuals and businesses thrive in the digital landscape.</span></p>
+            <button class="bg-[#6f6ad8] rounded-3xl text-white md:px-[0.8rem] py-[0.5rem] text-[1.2rem]">Discover More</button>
+        </div>
+    </section>
+    <section id="Courses">
+        <h1 class="text-center text-[#6f6ad8] md:mt-[3rem] text-[2rem] font-bold">Latest Courses</h1>
+        <div class="flex flex-col md:flex-row ms-[6%] mt-[2rem]">
+            <div id="web" class="bg-yellow-600 rounded-3xl md:w-[55vh] h-[40vh] me-[2rem]">
+                <button1 class="bg-gradient-to-r from-sky-500 to-indigo-500 block  text-white absolute md:p-[1rem] left-[29%] text-[1.2rem] rounded-full">$160</button1>
+                <button2 class="bg-white absolute rounded-3xl text-[#6f6ad8] md:px-[0.8rem] py-[0.3rem] text-[1.1rem] mt-[1.8rem] font-semibold ms-[2rem]">Web Design</button2>
+                <img src="./images/course-01.jpg" alt="" class="rounded-3xl md:w-[55vh] h-[40vh]"> 
+            </div>
+            <div id="web" class=" rounded-3xl md:w-[55vh] h-[40vh] me-[2rem]">
+                <button1 class="bg-gradient-to-r from-sky-500 to-indigo-500 block  text-white absolute md:p-[1rem] left-[59%] text-[1.2rem] rounded-full">$340</button1>
+                <button2 class="bg-white absolute rounded-3xl text-[#6f6ad8] md:px-[0.8rem] py-[0.3rem] text-[1.1rem] mt-[1.8rem] font-semibold ms-[2rem]">Development</button2>
+                <img src="./images/course-02.jpg" alt="" class="rounded-3xl md:w-[55vh] h-[40vh]"> 
+            </div>
+            <div id="web" class=" rounded-3xl md:w-[55vh] h-[40vh] me-[2rem]">
+                <button1 class="bg-gradient-to-r from-sky-500 to-indigo-500 block  text-white absolute md:p-[1rem] left-[89.5%] text-[1.2rem] rounded-full">$640</button1>
+                <button2 class="bg-white absolute rounded-3xl text-[#6f6ad8] md:px-[0.8rem] py-[0.3rem] text-[1.1rem] mt-[1.8rem] font-semibold ms-[2rem]">Word Press</button2>
+                <img src="./images/course-03.jpg" alt="" class="rounded-3xl md:w-[55vh] h-[40vh]"> 
+            </div>
+        </div>
+    </section>
+    <section id="Contact">
+        <div class="flex flex-col md:flex-row mt-[5rem] ms-[6%]">
+            <div id="cont" class="bg-gray-300 md:w-[95vh] h-[60vh] rounded-r-full pl-[4rem] pt-[3rem]">
+                <h2 class="text-[#6f6ad8] md:text-[1.5rem] font-semibold">Contact</h2>
+                <h1 class="md:text-[2rem] font-bold">Feel Free To Contact Us <br>Anytime</h1>
+                <div id="off"  class="bg-white rounded-3xl md:w-[60vh] h-[16vh]">
+                    <button class="bg-[#6f6ad8] text-white rounded-r-full md:px-[1rem] text-[1.2rem]
+                    py-[1.1rem] ms-[1px] mt-[1rem]">OFF <br>50%</button>
+                    <h2 class="md:ms-[25%] mt-[-17%] text-[1.2rem]">VALID:30 JUNE 2030 <br><span class="md:text-[1.5rem] font-bold">Special offer 50% OFF!</span></h2>
+                    
+                    
+                </div>
+                <i id="icon1" class="fa-brands fa-instagram"></i>
+                <i id="icon2" class="fa-brands fa-square-x-twitter"></i>
+                <i id="icon3" class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div id="msg" class="bg-[#6f6ad8] rounded-3xl md:w-[87vh] h-[55vh] absolute left-[50%] mt-[1rem]">
+                <input class="rounded-3xl md:mt-[10%] ms-[10%] w-[70vh] h-[2.5rem] pl-[2rem] text-lg " type="text" placeholder="Your Name...">
+                <input class="rounded-3xl md:mt-[2rem] ms-[10%] w-[70vh] h-[2.5rem] pl-[2rem] text-lg" type="email" placeholder="Your E-mail...">
+                <textarea name="" id="" class="rounded-3xl md:mt-[2rem] ms-[10%] w-[70vh] h-[25%] pl-[2rem] pt-[1rem] text-lg" placeholder="Your Message..."></textarea>
+                <button class="rounded-3xl text-[#6f6ad8] hover:border hover:bg-[#6f6ad8] hover:text-white md:mt-[1rem] ms-[12%] bg-white px-[1rem] py-[0.5rem] text-[1.2rem] font-semibold">Send Message Now</button>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-[#6f6ad8] w-full h-[10vh] rounded-t-full md:mt-[3rem]">
+        <h3 id=" foothead" class="text-[13px] pt-[2rem] text-center text-white">Copyright © 2040 codecatalyst Organization. All rights reserved.</h3>
+        <a class=" md:ms-[96%] mt-[-2.2rem] block" href="#head"><i id="up" class="fa-solid fa-angle-up"></i></a>
+    </footer>
+    <!-- <div class="asd"></div> -->
+    
+
+  
+    
+
+
+</body>
+<script>
+  const navLinks = document.querySelector('.nav-links')
+  function onToggleMenu(e){
+      e.name = e.name === 'menu' ? 'close' : 'menu'
+      navLinks.classList.toggle('top-[7%]')
+  }
+</script>
+</html>
